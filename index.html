@@ -1,54 +1,57 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LEGO</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
     <script src="https://kit.fontawesome.com/008426dc7c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script src="./js/jquery-1.11.3.min.js"></script>
     <script src="./js/jquery-ui-1.10.3.custom.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="js/lego.js"></script>
+    <script src="./js/lego.js"></script>
     <link rel="shortcut icon" href="./photo/favico.ico">
 </head>
 
 <body>
-
-    <!--헤더 메뉴 부분-->
+    <!--헤더-->
     <header>
-        <div id="inner">
-            <h1><a href="#"><img src="./photo/1.LEGO_logo.png" alt="로고이미지"></a>Lego</h1>
+        <!--상단메뉴-->
+        <nav id="top">
+            <h1><a href="#"><img src="./photo/01.LEGO_logo.png" alt="로고이미지"></a>Lego</h1>
             <ul id="menu">
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Focus</a></li>
                 <li><a href="#">Together</a></li>
                 <li><a href="#">News</a></li>
             </ul>
-            <!--sub menu를 넣어야 할까?-->
-        </div>
+        </nav>
     </header>
     <!--//헤더-->
-
-
     <!--슬로건-->
-    <section>
-        <div id="slogan">
-            <div class="mention">
-                <!--이미지 배경으로 넣어야 한다-->
-                <h3>
-                    only the best is<br>
-                    good enough
-                </h3>
-                <p>
-                    아이들이 LEGO 블록으로 자신만의 세계를 형성할 때<br>
-                    우리는 그들이 살고 있는 현재 그리고 물려 받을 미래 세상에<br>
-                    긍정적 영향을 미치는데 우리의 역할을 합니다.<br>
-                </p>
-            </div>
+    <section id="slogan">
+        <div class="mention">
+            <!--이미지 배경으로 넣어야함-->
+            <!--레고 슬로건-->
+
+            <h3>
+                only the best is<br>
+                good enough
+            </h3>
+
+            <!--//레고 슬로건-->
+            <!--레고 목표점-->
+
+            <p>
+                아이들이 LEGO 블록으로 자신만의 세계를 형성할 때<br>
+                우리는 그들이 살고 있는 현재 그리고 물려 받을 미래 세상에<br>
+                긍정적 영향을 미치는데 우리의 역할을 합니다.
+            </p>
+
+            <!--//레고 목표점-->
         </div>
+        <!--//mention-->
     </section>
     <!--//슬로건-->
 
@@ -62,54 +65,63 @@
                 이 회사는 아버지에게서 아들로 물려받았으며<br>
                 현재는 설립자의 손자인 Kjeld Kirk Kristiansen이 소유하고 있습니다.
             </p>
-
+            <!--연결하기-->
             <div id="link">
                 <a href="#">
                     <h4>레고 역사 알아보기<i class="fa-solid fa-angles-right"></i></h4>
                 </a>
             </div>
-
+            <!--//연결하기-->
         </div>
 
-
+        <!--큰 로고-->
         <div class="section-logo">
-            <a href="#"><img src="./photo/1.LEGO_logo.png" alt="로고이미지"></a>
+            <a href="#"><img src="./photo/01.LEGO_logo.png" alt="로고이미지"> </a>
         </div>
-
+        <!--//큰 로고-->
     </section>
     <!--//역사-->
 
     <!--회사-->
     <section id="company">
         <!--이미지 배경으로 넣어야 한다-->
+        <!--com-->
         <div class="com">
-            <h3>inspire and debelop<br>
-                the builders of tomorrow
-            </h3>
+            <div class="com-1">
+                <h3>
+                    inspire and debelop<br>
+                    the builders of tomorrow
+                </h3>
+            </div>
 
-            <h5>LEGO 놀이는 아이가 브릭을 처음 집는 순간부터 아이의 잠재력을 발휘하기 시작합니다.</h5>
+            <div class="com-2">
+                <h5>
+                    LEGO 놀이는 아이가 브릭을 처음 집는 순간부터 아이의 잠재력을 발휘하기 시작합니다.
+                </h5>
+            </div>
+            <!--연결하기-->
 
             <div id="link">
                 <a href="#">
                     <h4>레고 회사 알아보기<i class="fa-solid fa-angles-right"></i></h4>
                 </a>
             </div>
+            <!--//연결하기-->
         </div>
-    </section>
-    <!--//회사-->
+        <!--//com-->
 
-    <!--포커스-->
+
+    </section>
+
+    <!--focus-->
 
     <section id="focus">
-        <figure>
-            <img src="./photo/4.magnifier.png" alt="돋보기">
-        </figure>
-        <div class="focus2">
+        <div class="focus-in">
+            <!--돋보기-->
             <div class="magnifier">
-
                 <div class="box">
                     <h2>Focus</h2>
-                    <!--이미지 배경으로 넣어야 한다-->
+                    <!--슬라이드로 움직여야 한다-->
                     <div class="inbox">
                         <p>지적재산권</p>
                         <p>환경지속가능성</p>
@@ -117,51 +129,53 @@
                         <p>놀이를 통한 학습</p>
                         <p>정책</p>
                     </div>
+                    <!--//슬라이드로 움직여야 한다-->
                 </div>
+                <!--//돋보기 이미지 배경 안에 있을 박스-->
             </div>
+            <!--//돋보기-->
 
-            <div class="f1">
+            <div class="do">
                 <p>
-                    레고 그룹의 정책 및 공공 업무는 놀이를 통한 학습을 위한 글로벌 기업이 되려는<br>
+                    레고 그룹의 정책 및 공공 업무는 놀이를 통한 학습을 위한 글로벌 기업이 되려는
                     당사의 비전에 따라 추진됩니다.<br>
-                    우리는 정책 및 관련 이해관계자와 협력하여 모든 어린이가 성장하고 잠재력을<br>
+                    우리는 정책 및 관련 이해관계자와 협력하여 모든 어린이가 성장하고 잠재력을
                     최대한 실현하는데 필요한 기술을 배울 수 있는 글로벌 환경을 조성하도록 돕습니다.
                 </p>
-
+                <!--바로가기-->
                 <div id="link">
                     <a href="#">
-                        <h4>Focus 자세히 알아보기<i class="fa-solid fa-angles-right"></i></h4>
+                        <h4>레고 정책 알아보기<i class="fa-solid fa-angles-right"></i></h4>
                     </a>
                 </div>
+                <!--//바로가기-->
+
             </div>
         </div>
-
+        <figure>
+            <img src="./photo/04.magnifier.png" alt="돋보기">
+        </figure>
 
     </section>
+    <!--//focus-->
 
-    <!--//포커스-->
-
-    <!--new-->
-
+    <!--새로운 신상-->
     <section id="new">
-
+        <!--신상-->
         <div class="title">
             <figure>
-                <img src="./photo/5.bts-1.png" alt="방탄피규어">
-            </figure>
-            <h2>NEW ARRIVED</h2>
+                <img src="./photo/05.bts-1.png" alt="방탄피규어">
+            </figure>            
+            <h2>NEW ARRIVED</h2>            
             <figure>
-                <img src="./photo/5.bts-2.png" alt="방탄피규어">
+                <img src="./photo/05.bts-2.png" alt="방탄피규어">
             </figure>
         </div>
-
-
-        <article id="product">
-
-            <!--상품 1 팩맨 아케이드-->
+        <!--//신상-->
+        <div id="product">
             <div class="one">
                 <figure>
-                    <img src="./photo/6.10323.webp" alt="팩맨">
+                    <img src="./photo/06.10323.webp" alt="팩맨">
                 </figure>
                 <div class="intro">
                     <div class="alarm">
@@ -185,7 +199,7 @@
 
             <div class="one">
                 <figure>
-                    <img src="./photo/7.71799.webp" alt="닌자고 시티 시장">
+                    <img src="./photo/07.71799.webp" alt="닌자고 시티 시장">
                 </figure>
                 <div class="intro">
                     <div class="alarm">
@@ -208,7 +222,7 @@
             <!-- 상품 3-->
             <div class="one">
                 <figure>
-                    <img src="./photo/8.42156.webp" alt="푸조 하이퍼카">
+                    <img src="./photo/08.42156.webp" alt="푸조 하이퍼카">
                 </figure>
                 <div class="intro">
                     <div class="alarm">
@@ -230,7 +244,7 @@
             <!-- 상품 4-->
             <div class="one">
                 <figure>
-                    <img src="./photo/9.42158.webp" alt="화성탐사선">
+                    <img src="./photo/09.42158.webp" alt="화성탐사선">
                 </figure>
                 <div class="intro">
                     <div class="alarm">
@@ -338,36 +352,34 @@
             </div>
             <!--//상품 8-->
 
-        </article>
+        </div>
+        </div>
     </section>
-
-    <!--//new-->
-
+    <!--//새로운 신상-->
 
 
     <!--event-->
+
     <section id="event">
-
-        <div class="ment">
-            <h3>자유롭게 놀 줄 아는 우리들에게 불가능이란 없지</h3>
-
+        <div class="event-in">
+            <div class="ment">
+                <h3>자유롭게 놀 줄 아는 우리들에게 불가능이란 없지</h3>
+            </div>
             <div id="link">
                 <a href="#">
-                    <h4>자세히보기<i class="fa-solid fa-angles-right"></i></h4>
+                    <h4>레고 이벤트 알아보기<i class="fa-solid fa-angles-right"></i></h4>
                 </a>
             </div>
         </div>
-
-
         <!--동영상-->
-
         <video src="./video/14.1080p-lego.mp4"></video>
+
 
     </section>
     <!--//event-->
 
 
-    <!--together-->
+    <!--공익-->
     <section id="together">
         <div class="first">
             <div class="with">
@@ -385,39 +397,45 @@
                 </figure>
             </div>
         </div>
+        <!--//상단-->
+
 
         <!--교육-->
+ 
         <article>
-
             <div id="panel">
-
                 <div class="top">
-                    <h3>education</h3>
+                    <a href="#">
+                        <h3>education</h3>
+                    </a>
                 </div>
 
-
-                <div class="bottom"><a href="#">
+                <div class="bottom">
+                    <a href="#">
                         <p>교구 및 커리큘럼 제공<br><br></p>
                         <p>LEGO 학습 솔루션, 교실준비 리소스 등 제공</p>
                     </a>
                 </div>
             </div>
 
+            <!-- 이미지를 중간에 배치 시켜야 한다-->
+
             <figure class="model">
                 <img src="./photo/16-12.together.png" alt="같이 있는 사진">
             </figure>
+
+            <!--//이미지를 중간에 배치 시켜야 한다-->
         </article>
-
-
         <!--//교육-->
 
         <!--아이디어-->
         <article>
 
             <div id="panel">
-
                 <div class="top">
-                    <h3>Ideas</h3>
+                    <a href="#">
+                        <h3>Ideas</h3>
+                    </a>
                 </div>
 
                 <div class="bottom"><a href="#">
@@ -434,14 +452,15 @@
         </article>
         <!--//아이디어-->
 
-
         <!--점자블릭-->
 
         <article>
 
             <div id="panel">
                 <div class="top">
-                    <h3>Braille Bricks</h3>
+                    <a href="#">
+                        <h3>Braille Bricks</h3>
+                    </a>
                 </div>
 
                 <div class="bottom"><a href="#">
@@ -450,7 +469,7 @@
                     </a>
                 </div>
             </div>
-            
+
             <figure class="model">
                 <img src="./photo/18.Minifigure_13-758x401.webp" alt="아이디어스">
             </figure>
@@ -466,7 +485,9 @@
             <div id="panel">
 
                 <div class="top">
-                    <h3>Affiliate Program</h3>
+                    <a href="#">
+                        <h3>Affiliate Program</h3>
+                    </a>
                 </div>
 
                 <div class="bottom"><a href="#">
@@ -480,12 +501,11 @@
             </figure>
 
         </article>
+
         <!--//제휴-->
 
-
     </section>
-    <!--//together-->
-
+    <!--//공익-->
 
 
     <!--news-->
@@ -586,9 +606,6 @@
     <!--//news-->
 
 
-
-
-
     <footer>
 
         <div id="footermenu">
@@ -614,7 +631,7 @@
             <!--3-->
             <ul class="one">
                 <li>Together</li>
-                <li><a href="#"> 교육</a></li>
+                <li><a href="#">교육</a></li>
                 <li><a href="#">아이디어</a></li>
                 <li><a href="#">점자블록</a></li>
                 <li><a href="#">기업제휴</a></li>
@@ -637,7 +654,7 @@
             </ul>
         </div>
 
-        <div class="sns">  
+        <div class="sns">
             <div class="fu">
                 <h4>Follow US</h4>
             </div>
@@ -652,10 +669,17 @@
 
 
         <div class="footer-inner">
-            <p>LEGO System A/S, DK-7190 Billund, Denmark. Must be 18 years or older to purchase online. LEGO, the LEGO logo, the Minifigure, DUPLO, LEGENDS OF CHIMA, NINJAGO, BLONICLE, MNDSTORMS and
-             MIXELS art trademarks and copyrights of the LEGO Group. ⓒ2022 The LEGO Group. All rights reserved. Use of this site signifies your agreement to the terms of use.</p>
+            <p>LEGO System A/S, DK-7190 Billund, Denmark. Must be 18 years or older to purchase online. LEGO, the LEGO
+                logo,
+                the Minifigure, DUPLO, LEGENDS OF CHIMA, NINJAGO, BLONICLE, MNDSTORMS and
+                MIXELS art trademarks and copyrights of the LEGO Group. ⓒ2022 The LEGO Group. All rights reserved. Use
+                of
+                this site signifies your agreement to the terms of use.</p>
         </div>
     </footer>
+
+
+
 </body>
 
 </html>
