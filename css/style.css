@@ -1,0 +1,1930 @@
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126License: none (public domain)*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,
+big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,
+hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+*{
+    transition: all 0.8s;
+}
+/* //css reset// */
+
+
+/*css*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/*font-family: 'Noto Sans KR', sans-serif;*/
+
+@font-face {
+	font-family: 'Cera Pro Regular', sans-serif;
+	src: url(../fonts/Cera\ Pro\ Regular.otf);
+}
+
+@font-face {
+	font-family: 'Cera Pro Bold', sans-serif;
+	src: url(../fonts/Cera\ Pro\ Bold.otf);
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit
+}
+
+#link {
+	text-align: right;
+	font-size: 1.25rem;
+	color: #000;
+}
+
+
+/*헤더*/
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: #fff;
+}
+
+header #top{
+    width: 100%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    line-height: 10vh;
+}
+
+header #top h1{
+    font-size: 0;
+}
+
+header #top img{
+    width: 80%;
+    height: 80%;
+    margin: 1vh;    
+}
+
+header #top #menu{
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+header #top #menu li{
+    margin-right: 5vw;
+}
+
+
+/*section*/
+section{
+    margin-bottom: 20vh;
+}
+
+/*슬로건*/
+
+#slogan{
+    width: 100%;
+    background-image: url(../photo/02.main\ photo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30vh 0;
+}
+
+#slogan .mention{
+    color: #000;
+    text-align: center;
+}
+
+#slogan .mention h3{
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 3vh;
+    font-family: 'Cera Pro Bold';
+}
+
+#slogan .mention p{
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: 'Noto Sans KR';
+    line-height: 2.5rem;
+}
+
+/*  // 슬로건 // */
+
+
+
+/*역사*/
+
+#history {
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#history .story {
+	text-align: left;
+	box-sizing: border-box;
+}
+
+#history .story>p {
+	font-family: 'Noto Sans KR';
+	font-size: 1.25rem;
+	font-weight: 500;
+	margin-bottom: 6vh;
+	line-height: 2.5rem;
+}
+
+#history .section-logo{
+    width: 27vw;
+    height: 80%;
+}
+
+/* /// 슬로건 /// */
+
+/* 회사 */
+
+#company {
+	background-image: url(../photo/03-1.legocom.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 30vh 0;
+}
+
+#company .com {
+	width: 50%;
+	margin: auto;
+}
+
+#company .com> .com-1 h3 {
+	text-align: center;
+	color: #fff;
+	font-size: 3.7rem;
+	font-weight: 600;
+	font-family: 'Cera Pro Bold';
+	margin-bottom: 4vh;
+}
+
+#company .com> .com-2 h5 {
+	text-align: center;
+	font-family: 'Noto Sans KR';
+	font-weight: 500;
+	font-size: 1.2rem;
+	color: #fff;
+	margin-bottom: 3vh;
+}
+
+#company #link {
+	color: #fff;
+}
+
+
+/*  //회사//   */
+
+/*정책*/
+
+#focus {
+	position: relative;
+	background-color: #ffd500;	
+}
+
+.focus-in {
+	width: 80%;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: 15vh 0;
+	display: flex;
+	justify-content: space-around;
+	margin: auto;	
+	align-items: center;
+	background-image: url(../photo/4.magnifier.png);
+	background-size: 58%;
+    background-repeat: no-repeat;
+    background-position-x: -20%;
+    background-position-y: 44%;
+
+}
+
+.focus-in .magnifier .box {
+	width: 12vw;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.focus-in .magnifier .box h2 {
+	font-family: 'Cera Pro Bold';
+	font-size: 1.8rem;
+	font-weight: 600;
+	margin-bottom: 3vh;
+	text-align: center;
+}
+
+.focus-in .magnifier .box .inbox {
+	background-color: #fff;
+	width: 12vw;
+	height: 5vh;
+	border-radius: 50px;
+	text-align: center;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;	
+}
+
+.focus-in .magnifier .box .inbox>p {
+	font-family: 'Cera Pro Bold';
+	font-size: 1rem;
+	font-weight: 500;
+	margin: 3vh;
+	animation: slide 8s infinite;
+	animation-timing-function: linear;}
+
+@keyframes slide {
+	0% {
+		transform: translateY(0);
+	}
+
+	20% {
+		transform: translateY(-200%);
+	}
+
+	40% {
+		transform: translateY(-400%);
+	}
+
+	60% {
+		transform: translateY(-600%);
+	}
+
+	80% {
+		transform: translateY(-800%);
+	}
+
+	100% {
+		transform: translateY(-1000%);
+	}
+
+}
+
+.focus-in .do{
+	width: 50%;
+}
+
+.focus-in .do p {
+	font-size: 1.3rem;
+	font-family: 'Noto Sans Kr';
+	font-weight: 500;
+	margin-bottom: 3vh 0;
+	line-height: 2.5rem;
+	box-sizing: border-box;
+}
+
+
+/* //포커스 // */
+
+
+/* 상품 */
+
+#new {
+	width: 100%;
+	margin: auto;
+}
+
+#new .title {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+#new .title>h2 {
+	font-size: 4.5rem;
+	font-family: 'Cera Pro Bold';
+	font-weight: 700;
+
+}
+
+#new #product {
+	width: 90%;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	justify-content: center;
+}
+
+#new #product .one {
+	width: 23%;
+	height: 75vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	margin: 0 10px;
+}
+
+#new #product .one>figure {
+	border: 5px solid #ff0000;
+	height: 45vh;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+#new #product .one .intro {
+	margin: 20px 0;
+
+}
+
+#new #product .one .intro .alarm {
+	background-color: #ffd500;
+	border-radius: 5px;
+	width: 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1vh;
+	padding: 3px;
+
+}
+
+#new #product .one .intro .alarm>p {
+	font-size: 1rem;
+	font-family: 'Noto Sans KR';
+	font-weight: 600;
+	line-height: 1.3rem;
+
+}
+
+#new #product .one .name {
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin-bottom: 3vh;
+	padding-left: 1vh;
+    height: 2.5vh;
+}
+
+
+#new #product .one .shopping {
+	width: 100%;
+	background-color: #ffd500;
+	height: 5vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 600;
+	font-size: 1.3rem;
+	border-radius: 2vh;
+}
+
+/*   //상품///  */
+
+
+/*  이벤트*/
+
+#event {
+	width: 100%;
+	height: 35vh;
+	background-color: #ff0000;
+	display: flex;
+	justify-content: space-around;
+	padding: 3vh;
+	box-sizing: border-box;
+}
+
+#event .event-in{
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	padding-right: 2vw;
+}
+
+#event .event-in .ment {
+	margin: auto;
+	color: #fff;
+}
+
+#event .event-in .ment h3 {
+	font-family: 'Cera Pro Bold';
+	font-weight: 600;
+	font-size:  1.5rem;
+	text-align: left;
+	margin-bottom: 1vh;
+}
+
+#event .event-in #link {
+	color: #fff;
+}
+
+
+#event video {
+	width: 60%;
+}
+
+/*   // 이벤트// */
+
+/* 함께 */
+#together {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#together .first {
+	width: 90%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;	
+}
+
+#together .with {
+	width: 45%;
+
+}
+
+#together .with p {
+	font-family: 'Cera Pro Regular';
+	font-size: 1.2rem;
+	font-weight: 500;
+	line-height: normal;
+}
+
+#together .pic {
+	width: 45%;
+	text-align: center;
+	font-size: 5.5rem;
+	font-family: 'Cera Pro Bold';
+	font-weight: 900;
+}
+
+#togeter .pic>h2 {
+	position: absolute;
+}
+
+
+#together .pic>figure {
+	position: relative;
+	top: -4vh;
+}
+
+/*   함께 - 연결*/
+
+#together article {
+	width: 23%;
+	height: 50vh;
+	overflow: hidden;
+	box-sizing: border-box;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px #d8d8d8;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 5vh;
+	position: relative;
+}
+
+
+#together article #panel .top {
+	background-color: #00B94D;
+	text-align: left;
+	color: #fff;
+	height: 25vh;
+	display: flex;
+	align-items: center;
+	font-family: 'Cera Pro Bold';	
+	font-size: 2rem;
+	font-weight: 600;
+	padding: 1vh;
+	box-sizing: border-box;
+
+}
+
+#together article .model {
+	position: absolute;
+	top: 25%;
+	left: 55%;
+}
+
+#together article:nth-child(3) .model {
+	width: 25%;
+	top: 25%;
+	left: 69%;
+}
+
+#together article:nth-child(4) .model {
+	width: 75%;
+	top: 25%;
+	left: 26%;
+}
+
+#together article:nth-child(5) .model {
+	width: 23%;
+	top: 27%;
+	left: 74%;
+}
+
+#together>article #panel .bottom {
+	height: 25vh;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Cera Pro Regular';
+	align-content: center;
+	justify-content: center;
+	padding: 1vh;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+
+#together #panel .bottom p:nth-child(1) {
+	font-family: 'Cera Pro Regular';
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+
+#together #link {
+	text-align: right;
+	font-family: 'Cera Pro Bold';
+	font-weight: 600;
+	font-size: 1.4rem;
+}
+
+/* // 함께// */
+
+
+/*뉴스*/
+
+#news {
+	background-color: #000;
+	width: 100%;
+	color: #fff;
+	padding: 5vh;
+	box-sizing: border-box;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+#news>h2 {
+	font-family: 'Cera Pro Bold';
+	font-weight: 700;
+	font-size: 3.4rem;	
+	width: 60%;
+	margin: auto;
+}
+
+.newstable {
+	width: 100%;
+	margin: auto;
+	display: flex;
+	overflow: hidden;
+}
+
+.newstable>figure {
+	width: 50%;
+	margin: auto;
+	text-align: center;
+}
+
+.newstable>figure:hover{
+	transition: 0.5s;
+	transform: rotate(-60deg);
+	cursor: pointer;
+}
+
+.newstable .swiper-wrapper {
+	display: flex;
+	width: 50%;
+}
+
+.newstable .swiper-wrapper .swiper-slide {
+	margin-right: 2vw;
+}
+
+.newstable .swiper-wrapper .swiper-slide .board {
+	margin-top: 1vh;
+	font-family: 'Cera Pro Regular';
+}
+
+.newstable .swiper-wrapper .swiper-slide .board .var {
+	background-color: #4c9d92;
+	width: 9vw;
+	border-radius: 10px;
+	height: 2.7vh;
+	margin-bottom: 10px;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.1rem;
+
+}
+
+.newstable .swiper-wrapper .swiper-slide:nth-child(2) .board .var {
+	background-color: #2275d3;
+}
+
+.newstable .swiper-wrapper .swiper-slide:nth-child(3) .board .var {
+	background-color: #94A45F;
+}
+
+#news .newstable .swiper-wrapper .swiper-slide:nth-child(4) .board .var {
+	background-color: #2275d3;
+}
+
+#news .newstable .swiper-wrapper .board p {
+	font-size: 1.1rem;
+	font-weight: 500;
+}
+
+#news #link {
+	width: 90%;
+	display: flex;
+	justify-content: flex-end;
+	color: white;
+}
+
+/* // 뉴스 // */
+
+
+
+/* footer*/
+footer {
+	background-image: url(../photo/25.legobrick\ 1-12.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: 3%;
+}
+
+footer #footermenu {
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer #footermenu .one {
+	font-size: 1.2rem;
+	font-family: 'Cera Pro Regular';
+}
+
+footer #footermenu .one li {
+	margin-bottom: 2vh;
+}
+
+footer #footermenu .one li:nth-child(1) {
+	font-family: 'Cera Pro Bold';
+	font-size: 1.3rem;
+	font-weight: 600;
+	margin-bottom: 3vh;
+}
+
+footer .sns {
+	width: 90%;
+	margin: auto;
+	margin-bottom: 100px;
+}
+
+footer .sns .fu {
+	margin-bottom: 2vh;
+}
+
+footer .sns .fu>h4 {
+	font-family: 'Cera Pro Bold';
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+
+
+footer .sns .icon>li>a {
+	width: 2.5rem;
+	height: 2.5rem;
+	display: inline;
+	float: left;
+	margin-right: 2vw;
+}
+
+footer .footer-inner {
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+
+
+
+
+
+
+/*반응형*/
+
+
+/*1024이상 1200이하*/
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+
+
+	/*슬로건*/
+
+	#slogan{
+		padding: 25vh 0;
+	}
+
+	#slogan .mention h3{
+    	font-size: 3.5rem;
+    	font-weight: 600;
+	}
+
+	#slogan .mention p{
+    	font-size: 1.2rem;
+    	font-weight: 500;
+	}
+
+	#company{
+		padding: 25vh 0;
+	}
+
+	#company .com{
+		width: 80%;
+	}
+
+	#company .com > .com-1 h3{
+		font-size: 3rem;
+		margin-bottom: 2vh;
+	}
+
+	#company .com> .com-2 h5{
+		font-size: 1rem;
+	}
+	
+	/* 정책*/ 
+	.focus-in {
+		padding: 10vh 0;
+		background-size: 70%;
+    	background-repeat: no-repeat;
+    	background-position-x: -44%;
+    	background-position-y: 44%;
+	}
+
+	.focus-in .magnifier .box{
+		width: 15vw;
+	}
+
+	.focus-in .magnifier .box h2 {
+		font-size: 1.8rem;
+		margin-bottom: 1vh;
+	}
+
+	.focus-in .magnifier .box .inbox {		
+		width: 15vw;
+	}
+
+	.focus-in .magnifier .box .inbox>p {
+		font-size: 0.8rem;
+		font-weight: 400;
+		margin: 2vh, 0;
+	}
+
+	.focus-in .do{
+		margin-right: 2vw ;
+	}
+	.focus-in .do p {
+		font-size: 1rem;
+		margin: 2vh 0;
+	}
+
+	#focus #link{
+		font-size: 1.1rem;
+	} 
+	/*  // 정책// */
+
+	/* 상품 */
+
+	#new .title h2{
+		font-size: 3rem;
+	}
+
+	#new .title  figure img{
+		max-width: 90%;
+	}
+
+	#new #product .one{
+		width: 45%;
+	}
+
+	#new #product .one figure img{
+		max-width: 70%;
+		margin: auto;
+	}
+
+
+	#new #product .one:nth-child(1) figure img{
+		max-width: 55%;	
+		margin: auto;
+	}
+
+
+	/*  이벤트*/
+	#event .event-in .ment h3{
+		font-size: 1.3rem;
+	}
+
+	#event .event-in #link {
+		font-size: 1.1rem;
+		font-weight: 600;
+	}
+
+	/*공익*/
+	#together .first{
+		margin-bottom: 4vh;
+	}
+
+	
+	#together .with p {
+		font-size: 1rem;
+		font-weight: 500;
+	}
+
+	#together article{
+		width: 23%;
+		height: 40vh;
+		margin-bottom: 2vh;
+	}
+
+	#together article #panel .top{
+		font-size: 1.5rem;
+		height: 20vh;
+	}
+
+	#together>article #panel .bottom{
+		height: 20vh;
+		font-size: 1rem;
+	}
+
+	#together #panel .bottom p:nth-child(1) {
+		font-size: 1.1rem;
+	}
+
+	#together article:nth-child(4) .model{
+		top: 29%;
+	}
+
+	/*뉴스*/
+	.newstable .swiper-wrapper .swiper-slide .board .var{
+		width: 12vw;
+	}
+
+}
+
+
+
+@media screen and (min-width: 767px) and (max-width: 1024px){
+	body{
+		transition: 0.7s;
+	}
+
+	#link{
+		font-size: 1rem;
+	}
+
+	section{
+		margin-bottom: 10vh;
+	}
+
+	/*슬로건*/
+
+	#slogan{
+		padding: 20vh 0;
+	}
+	#slogan .mention h3{
+    	font-size: 4rem;
+    	font-weight: 600;
+	}
+
+	#slogan .mention p{
+    	font-size: 1rem;
+    	font-weight: 500;
+	}
+
+	#history .story{
+		padding: 5vh 0;
+	}
+
+	#history .story p{
+		font-size: 1rem;
+	}
+
+	#company{
+		padding: 20vh 0;
+	}
+
+	#company .com{
+		width: 85%;
+	}
+
+	#company .com> .com-1 h3 {
+		font-size: 2rem;
+	}
+
+	#company .com> .com-2 h5{
+		font-size: 1rem;
+	}
+
+	.focus-in{
+		background-image: none;
+		width: 100%;
+		justify-content: center;
+		padding: 8vh;
+	}
+
+	#focus figure, .focus-in .magnifier .box {
+		display: none;
+	}
+
+	.focus-in .do{
+		width: 100%;
+	}
+
+
+	.focus-in .do p {
+		
+		font-size: 1rem;
+	}
+
+
+	/*상품*/
+	#new .title h2{
+		font-size: 3rem;
+	}
+
+	#new .title  figure img{
+		max-width: 75%;
+	}
+
+	#new #product .one{
+		width: 45%;
+		height: 60vh;
+		margin: 5px 10px;
+	}
+
+	#new #product .one .intro{
+		margin: 10px 0;
+	}
+
+	#new #product .one .name{
+		margin-bottom: 1vh;
+		height: 2vh;
+	}
+
+	#new #product .one>figure{
+		height: 35vh;
+	}
+
+	#new #product .one figure img{
+		max-width: 65%;
+		margin: auto;
+	}	
+
+	#new #product .one:nth-child(1) figure img{
+		max-width: 50%;	
+		margin: auto;
+	}
+
+	#new #product .one .intro .alarm{
+		width: 6rem;
+	}
+
+	#new #product .one .shopping{
+		height: 4.5vh;
+	}
+
+	/*이벤트*/
+	#event{
+		padding: 0;
+	}
+
+
+	#event .event-in {
+		display: none;
+	}
+
+
+	#event video {
+		width: 80%;
+	}
+
+	/*공익*/	
+
+	#together .first{
+		display: flex;
+		justify-content: space-between;
+		margin: 2vh 0;
+	}
+
+	#together .with{
+		width: 50%;
+	}
+
+	#together .with p{
+		font-size: 1rem;
+		font-weight: 500;
+	}
+
+	#together article{
+		width: 23%;
+		height: 30vh;
+		margin-bottom: 2vh;
+	}
+
+	#together .pic {
+		font-size: 4rem;
+	}
+
+	#together .pic figure{
+		top:-2vh;
+	}
+
+	#together article #panel .top{
+		font-size: 1rem;
+		height: 15vh;
+	}
+
+	#together>article #panel .bottom{
+		height: 15vh;
+		font-size: 0.9rem;
+	}
+
+	#together #panel .bottom p:nth-child(1) {
+		font-size: 1rem;
+	}
+
+	#together article .model{
+		display: none;
+	}
+
+
+	/*뉴스*/
+
+	#news>h2{
+		font-size: 2.5rem;
+	}
+
+	.newstable>figure {
+		display: none;
+	}
+
+	.newstable .swiper-wrapper .swiper-slide .board .var{
+		width: 16vw;
+	}
+
+	#news .newstable .swiper-wrapper .board p {
+		font-size: 1rem;
+	}
+
+	/*푸터*/
+
+	footer{
+		background-image: none;
+		padding: 3vh;
+	}
+
+	footer #footermenu .one{
+		font-size: 1rem;
+	}
+
+
+}
+
+
+
+
+/*540이상 766이하*/
+@media screen and (min-width: 540px) and (max-width: 767px) {
+
+	
+	body{
+		transition: 0.7s;
+	}
+
+	#link{
+		font-size: 0.9rem;
+	}
+
+	section{
+		margin-bottom: 5vh;
+	}
+
+	/*슬로건*/
+
+	#slogan{
+		padding: 10vh 0;
+	}
+	#slogan .mention h3{
+    	font-size: 30px;
+    	font-weight: 600;
+		margin-bottom: 2vh;
+	}
+
+	#slogan .mention p{
+    	font-size: 14px;
+		font-weight: 400;		
+	}
+
+	/*역사*/
+
+
+	#history .section-logo{
+    	display: none;
+	}
+
+	#history .story p{
+		font-size: 0.9rem;
+	}
+
+	/*회사*/
+
+	#company{
+		padding: 10vh 0;
+	}
+
+	#company .com{
+		width: 70%;
+	}
+
+	#company .com> .com-1 h3{
+		font-size: 1.3rem;
+	}
+
+	#company .com> .com-2 h5{
+		font-size: 0.9rem;
+	}
+
+	/*포커스*/
+
+	#focus figure, .focus-in .magnifier .box {
+		display: none;
+	}
+
+	.focus-in{
+		background-image: none;
+		padding: 10vh 0;
+	}
+
+	.focus-in .do{
+		width: 100%;
+	}
+
+	.focus-in .do p {
+		font-size: 0.9rem;
+	}
+
+	/*상품*/
+	#new .title h2{
+		font-size: 2rem;
+	}
+
+	#new .title  figure img{
+		display: none;
+	}
+
+	#new #product .one{
+		width: 85%;
+	}
+
+	#new #product .one figure img{
+		max-width: 70%;
+		margin: auto;
+	}
+
+	#new #product .one:nth-child(1) figure img{
+		max-width: 50%;	
+		margin: auto;
+	}
+
+	#new #product .one .intro {
+		margin: 10px 0;
+	}
+
+	#new #product .one .intro .alarm{
+		margin: 6px;
+		width: 7rem;
+	}
+
+	#new #product .one .intro .alarm>p{
+		font-size: 0.9rem;
+		font-weight: 500;
+	}
+
+	#new #product .one .name{
+		font-size: 1.2rem;
+		font-weight: 500;
+	}
+
+	#new #product .one .shopping{
+		font-size: 1.8rem;
+		height: 8vh;
+	}
+
+	/*이벤트*/
+
+	#event .event-in {
+		display: none;
+	}
+
+	#event video{
+		width: 85%;
+	}
+
+	/*공익*/
+
+	#together {
+		justify-content: space-evenly;
+	}
+
+	#together .pic h2{
+		font-size: 4rem;
+	}
+
+	#together .pic>figure{
+		margin: auto;
+		width: 80%;
+	}
+
+
+	#together .first{
+		margin-bottom: 1vh;
+	}
+
+
+	#together .with{
+		display: none
+	}
+
+	#together .pic{
+		width: 100%;
+	}
+
+	#together article{
+		width: 270px;
+		height: 270px;
+		border-radius: 50%;
+	}
+
+	#together article #panel .top{
+		width: 270px;
+		height: 270px;
+		font-size: 1.3rem;
+		display: flex;
+		justify-content: center;
+	}
+
+	#together article #panel .bottom{
+		display: none;
+	}
+
+	#together article .model{
+		display: none;
+	}
+
+	/*뉴스*/
+
+	#news>h2{
+		font-size: 2rem;
+		margin-bottom: 5px;
+	}
+
+	#news #link{
+		margin-top: 10px;
+	}
+
+	.newstable>figure {
+		display: none;
+	}
+
+	.newstable .swiper-wrapper .swiper-slide .board .var{
+		width: 20vw;
+	}
+
+	#news .newstable .swiper-wrapper .board p {
+		font-size: 1rem;
+	}
+
+	/*푸터*/
+	footer{
+		background-image: none;
+	}
+
+
+	footer #footermenu .one{
+		font-size: 0.8rem;
+	}
+
+	footer #footermenu .one li {
+		margin-bottom: 1vh;
+	}
+
+	footer #footermenu .one li:nth-child(1){
+		font-size: 1rem;
+		font-weight: 600;
+	}
+
+	footer .sns{
+		width: 100%;
+	}
+
+	footer .sns .fu h4{
+		font-size: 1rem;
+	}
+
+	footer .sns .icon img{
+		width: 90%;
+	}
+
+	footer .footer-inner{
+		width: 100%;
+	}
+
+	footer .footer-inner p{
+		font-size: 0.9rem;
+	}
+
+
+}
+
+
+
+
+/*539이하*/
+@media screen and (max-width: 539px){ 
+	
+	body{
+		transition: 0.7s;
+	}
+
+	#link{
+		font-size: 0.9rem;
+	}
+
+	section{
+		margin-bottom: 5vh;
+	}
+
+	/*메뉴*/
+
+	#top #menu li{
+		font-size: 0.9rem;
+
+	}
+
+	/*슬로건*/
+
+	#slogan{
+		padding: 15vh 0;
+	}
+	#slogan .mention h3{
+    	font-size: 30px;
+    	font-weight: 600;
+		margin-bottom: 3vh;
+	}
+
+	#slogan .mention p{
+    	font-size: 14px;
+		font-weight: 400;		
+	}
+
+	#slogan .mention p > br{
+		display: none;
+	}
+
+	/*역사*/
+
+
+	#history .section-logo{
+    	display: none;
+	}
+
+	#history .story p{
+		font-size: 0.9rem;
+	}
+
+	#history .story p > br{
+		display: none;
+	}
+
+	/*회사*/
+
+	#company{
+		padding: 10vh 0;
+	}
+
+	#company .com{
+		width: 70%;
+	}
+
+	#company .com> .com-1 h3{
+		font-size: 1.3rem;
+	}
+
+	#company .com> .com-2 h5{
+		font-size: 0.9rem;
+	}
+
+	/*포커스*/
+
+    .focus-in .magnifier .box, .focus-in .magnifier .box .inbox {
+		display: block;
+		width: 100%;
+	}
+
+	.focus-in{
+		background-image: none;
+		padding: 10vh 0;
+		display: flex;
+		justify-content: center;
+	}
+
+	.focus-in .do{
+		display: none;
+	
+	}
+
+	/*상품*/
+	#new .title h2{
+		font-size: 2rem;
+	}
+
+	#new .title  figure img{
+		display: none;
+	}
+
+	#new #product .one{
+		width: 85%;
+	}
+
+	#new #product .one figure img{
+		max-width: 85%;
+		margin: auto;
+	}
+
+	#new #product .one:nth-child(1) figure img{
+		max-width: 62%;	
+		margin: auto;
+	}
+
+	#new #product .one .intro {
+		margin: 10px 0;
+	}
+
+	#new #product .one .intro .alarm{
+		margin: 6px;		
+    	width: 7rem;
+	}
+
+	#new #product .one .intro .alarm>p{
+		font-size: 0.9rem;
+		font-weight: 500;
+	}
+
+	#new #product .one .name{
+		font-size: 1.2rem;
+		font-weight: 500;
+	}
+
+	#new #product .one .shopping{
+		font-size: 1rem;
+		height: 8vh;
+	}
+
+	/*이벤트*/
+
+	#event .event-in {
+		display: none;
+	}
+
+	#event video{
+		width: 85%;
+	}
+
+	/*공익*/
+
+	#together {
+		justify-content: space-evenly;
+	}
+
+	#together .pic h2{
+		font-size: 4rem;
+	}
+
+	#together .pic>figure{
+		margin: auto;
+		width: 80%;
+	}
+
+
+	#together .first{
+		margin-bottom: 1vh;
+	}
+
+
+	#together .with{
+		display: none
+	}
+
+	#together .pic{
+		width: 100%;
+	}
+
+	#together article{
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+	}
+
+	#together article #panel .top{
+		height: 200px;
+		font-size: 1.3rem;
+		display: flex;
+		justify-content: center;
+	}
+
+	#together article #panel .bottom{
+		display: none;
+	}
+
+	#together article .model{
+		display: none;
+	}
+
+	/*뉴스*/
+
+	#news>h2{
+		font-size: 2rem;
+		margin-bottom: 5px;
+	}
+
+	#news #link{
+		margin-top: 10px;
+	}
+
+	.newstable>figure {
+		display: none;
+	}
+
+	.newstable .swiper-wrapper .swiper-slide .board .var{
+		width: 20vw;
+	}
+
+	#news .newstable .swiper-wrapper .board p {
+		font-size: 1rem;
+	}
+
+	/*푸터*/
+	footer{
+		background-image: none;
+	}
+
+
+	footer #footermenu .one{
+		font-size: 0.8rem;
+	}
+
+	footer #footermenu .one li {
+		margin-bottom: 1vh;
+	}
+
+	footer #footermenu .one li:nth-child(1){
+		font-size: 1rem;
+		font-weight: 600;
+	}
+
+	footer .sns{
+		width: 100%;
+	}
+
+	footer .sns .fu h4{
+		font-size: 1rem;
+	}
+
+	footer .sns .icon img{
+		width: 90%;
+	}
+
+	footer .footer-inner{
+		width: 100%;
+	}
+
+	footer .footer-inner p{
+		font-size: 0.9rem;
+	}
+	
+
+}		
+
+
+
+
+/*400이하*/
+@media screen and (max-width: 400px) {
+	#link{
+		font-size: 0.9rem;
+	}
+
+	section{
+		margin-bottom: 5vh;
+	}
+
+	/*슬로건*/
+
+	header #top #menu li{
+		font-size: 14px;
+	}
+
+	#slogan{
+		padding: 15vh 0;
+	}
+	#slogan .mention h3{
+    	font-size: 39px;
+    	font-weight: 600;
+		margin-bottom: 2vh;
+	}
+
+	#slogan .mention p{
+    	font-size: 14px;
+		font-weight: 400;		
+	}
+
+	#slogan .mention p > br{
+		display: none;
+	}
+
+	/*역사*/
+
+
+	#history .section-logo{
+    	display: none;
+	}
+
+	#history .story{
+		padding: 15px;
+	}
+
+	#history .story p{
+		font-size: 0.9rem;
+	}
+
+	#history .story p > br{
+		display: none;
+	}
+
+	/*회사*/
+
+	#company{
+		padding: 10vh 0;
+	}
+
+	#company .com{
+		width: 70%;
+	}
+
+	#company .com> .com-1 h3{
+		font-size: 1.3rem;
+	}
+
+	#company .com> .com-2 h5{
+		font-size: 0.9rem;
+	}
+
+	/*포커스*/
+
+    .focus-in .magnifier .box, .focus-in .magnifier .box .inbox {
+		display: block;
+		width: 100%;
+	}
+
+	.focus-in{
+		background-image: none;
+		padding: 10vh 0;
+	}
+
+	.focus-in .do{
+		display: none;
+	}
+
+
+	/*상품*/
+	#new .title h2{
+		font-size: 2rem;
+	}
+
+	#new .title  figure img{
+		display: none;
+	}
+
+	#new #product .one{
+		width: 85%;
+	}
+
+	#new #product .one figure img{
+		max-width: 85%;
+		margin: auto;
+	}
+
+	#new #product .one:nth-child(1) figure img{
+		max-width: 62%;	
+		margin: auto;
+	}
+
+	#new #product .one .intro {
+		margin: 10px 0;
+	}
+
+	#new #product .one .intro .alarm{
+		margin: 6px;
+		width: 7rem;
+	}
+
+	#new #product .one .intro .alarm>p{
+		font-size: 0.9rem;
+		font-weight: 500;
+	}
+
+	#new #product .one .name{
+		font-size: 1.2rem;
+		font-weight: 500;
+	}
+
+	#new #product .one .shopping{
+		font-size: 20px;
+		height: 8vh;
+	}
+
+	/*이벤트*/
+
+	#event .event-in {
+		display: none;
+	}
+
+	#event video{
+		width: 85%;
+	}
+
+	/*공익*/
+
+	#together {
+		justify-content: space-evenly;
+	}
+
+	#together .pic{
+		display: none;
+	}
+
+
+	#together .first{
+		margin-bottom: 1vh;
+	}
+
+
+	#together .with{
+		display: none
+	}
+
+	#together .pic{
+		width: 100%;
+	}
+
+	#together article{
+		width: 180px;
+		height: 180px;
+		border-radius: 50%;
+	}
+
+	#together article #panel .top{
+		height: 180px;
+		font-size: 1rem;
+		display: flex;
+		justify-content: center;
+	}
+
+	#together article #panel .bottom{
+		display: none;
+	}
+
+	#together article .model{
+		display: none;
+	}
+
+	/*뉴스*/
+
+	#news>h2{
+		font-size: 2rem;
+		margin-bottom: 5px;
+	}
+
+	#news #link{
+		margin-top: 10px;
+	}
+
+	.newstable>figure {
+		display: none;
+	}
+
+	.newstable .swiper-wrapper .swiper-slide .board .var{
+		width: 36vw;
+	}
+
+	#news .newstable .swiper-wrapper .board p {
+		font-size: 14px;
+		line-height: normal;
+	}
+
+	/*푸터*/
+	footer{
+		background-image: none;
+		padding: 2%;
+	}
+
+	footer #footermenu{
+		width: 100%;
+		margin-bottom: 10px;
+		justify-content: space-between;
+	}
+
+
+	footer #footermenu .one{
+		font-size: 0.8rem;
+	}
+
+	footer #footermenu .one li {
+		margin-bottom: 1vh;
+	}
+
+	footer #footermenu .one li:nth-child(1){
+		font-size: 14px;
+		font-weight: 600;
+	}
+
+	footer .sns{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	footer .sns .fu h4{
+		font-size: 14px;
+	}
+
+	footer .sns .icon img{
+		width: 80%;
+	}
+
+	footer .footer-inner{
+		width: 100%;
+	}
+
+	footer .footer-inner p{
+		font-size: 12px;
+	}
+
+
+}
+
+
+
