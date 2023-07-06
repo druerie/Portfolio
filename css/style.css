@@ -1674,13 +1674,16 @@ footer .footer-inner {
 
 	/*슬로건*/
 
+
+
 	header #top img{
 		width: 70%;
 		height: 70%;
 	}
 
 	header #top #menu li{
-		font-size: 12px;
+		font-size: 0.6rem;
+		margin-right: 10px;
 	}
 
 	#slogan{
