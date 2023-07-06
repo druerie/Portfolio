@@ -302,7 +302,7 @@ section{
 	}
 
 	100% {
-		transform: translateY(-1000%);
+		transform: translateY(-1200%);
 	}
 
 }
@@ -1674,8 +1674,13 @@ footer .footer-inner {
 
 	/*슬로건*/
 
+	header #top img{
+		width: 70%;
+		height: 70%;
+	}
+
 	header #top #menu li{
-		font-size: 14px;
+		font-size: 12px;
 	}
 
 	#slogan{
