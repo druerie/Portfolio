@@ -1679,7 +1679,7 @@ footer .footer-inner {
 	}
 
 	header #top{
-		justify-content: space-around;
+		justify-content: center;
 	}
 
 	header #top img{
