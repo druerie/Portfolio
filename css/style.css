@@ -1411,6 +1411,7 @@ footer .footer-inner {
 	/*메뉴*/
 
 	header #top #menu{
+		width: 80%;
 		font-size: 12px;
 		font-weight: 300;
 
@@ -1683,7 +1684,8 @@ footer .footer-inner {
 	}
 
 	header #top #menu{
-		display: none;
+		width: 80%;
+		font-size: 8px;
 	}
 	
 
