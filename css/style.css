@@ -92,6 +92,7 @@ header #top{
     display: flex;
     justify-content: space-around;
     line-height: 10vh;
+	font-family: 'Cera Pro Regular';
 }
 
 header #top h1{
@@ -1682,13 +1683,12 @@ footer .footer-inner {
 
 
 	header #top img{
-		width: 70%;
-		height: 70%;
+		width: 80%;
+		height: 80%;
 	}
 
 	header #top #menu li{
-		font-size: 0.6rem;
-		margin-right: 10px;
+		display: none;
 	}
 
 	#slogan{
