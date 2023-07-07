@@ -1677,9 +1677,15 @@ footer .footer-inner {
 		margin-bottom: 5vh;
 	}
 
+	header #top img{
+		width: 50px;
+		height: 50px;
+	}
+
 	header #top #menu{
 		display: none;
-	}	
+	}
+	
 
 
 	/*슬로건*/
