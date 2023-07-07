@@ -1410,8 +1410,9 @@ footer .footer-inner {
 
 	/*메뉴*/
 
-	#top #menu li{
-		font-size: 0.9rem;
+	header #top #menu{
+		font-size: 12px;
+		font-weight: 300;
 
 	}
 
@@ -1677,11 +1678,8 @@ footer .footer-inner {
 	}
 
 	header #top #menu{
-		width: 80%;
-		font-weight: 300;
-		font-size: 12px;
-	}
-
+		display: none;
+	}	
 
 
 	/*슬로건*/
