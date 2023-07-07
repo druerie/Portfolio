@@ -1442,6 +1442,10 @@ footer .footer-inner {
     	display: none;
 	}
 
+	#history .story{
+		padding: 2%;
+	}
+
 	#history .story p{
 		font-size: 0.9rem;
 	}
@@ -1708,7 +1712,7 @@ footer .footer-inner {
 	}
 
 	#history .story{
-		padding: 15px;
+		padding: 2%;
 	}
 
 	#history .story p{
