@@ -92,7 +92,6 @@ header #top{
     display: flex;
     justify-content: space-around;
     line-height: 10vh;
-	font-family: 'Cera Pro Regular';
 }
 
 header #top h1{
@@ -303,7 +302,7 @@ section{
 	}
 
 	100% {
-		transform: translateY(-1200%);
+		transform: translateY(-1000%);
 	}
 
 }
@@ -1445,7 +1444,6 @@ footer .footer-inner {
 
 	#history .story p{
 		font-size: 0.9rem;
-		padding: 2%;
 	}
 
 	#history .story p > br{
@@ -1674,22 +1672,23 @@ footer .footer-inner {
 		margin-bottom: 5vh;
 	}
 
-	/*슬로건*/
-
 	header #top{
 		justify-content: center;
 	}
 
 
-
-	header #top img{
-		width: 80%;
-		height: 80%;
+	header #top #menu{
+		font-weight: 300;
+		font-size: 12px;
 	}
 
 	header #top #menu li{
-		display: none;
+		margin-right: 10px;
 	}
+
+
+
+	/*슬로건*/
 
 	#slogan{
 		padding: 15vh 0;
