@@ -1675,6 +1675,10 @@ footer .footer-inner {
 
 	/*슬로건*/
 
+	header #top{
+		justify-content: center;
+	}
+
 
 
 	header #top img{
