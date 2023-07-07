@@ -1672,12 +1672,8 @@ footer .footer-inner {
 		margin-bottom: 5vh;
 	}
 
-	header #top{
-		justify-content: center;
-	}
-
-
 	header #top #menu{
+		width: 70%;
 		font-weight: 300;
 		font-size: 12px;
 	}
