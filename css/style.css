@@ -105,14 +105,14 @@ header #top img{
 }
 
 header #top #menu{
+	width: 50%;
     display: flex;
     font-size: 1.1rem;
     font-weight: 600;
+	justify-content: space-evenly;
 }
 
-header #top #menu li{
-    margin-right: 5vw;
-}
+
 
 
 /*section*/
@@ -1680,10 +1680,6 @@ footer .footer-inner {
 	header #top #menu{
 		font-weight: 300;
 		font-size: 12px;
-	}
-
-	header #top #menu li{
-		margin-right: 10px;
 	}
 
 
