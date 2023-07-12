@@ -1,0 +1,1261 @@
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126License: none (public domain)*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,
+big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,
+hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* //css reset// */
+
+
+/*css*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/*font-family: 'Noto Sans KR', sans-serif;*/
+
+@font-face {
+	font-family: 'Cera Pro Regular', sans-serif;
+	src: url(../fonts/Cera\ Pro\ Regular.otf);
+}
+
+@font-face {
+	font-family: 'Cera Pro Bold', sans-serif;
+	src: url(../fonts/Cera\ Pro\ Bold.otf);
+}
+
+*{
+    transition: all 0.8s;
+	font-family: 'Noto Sans KR'
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit
+}
+
+#link {
+	text-align: right;
+	font-size: 1.25rem;
+	color: #000;
+}
+
+/*헤더*/
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: #fff;
+}
+
+header #top{
+    width: 100%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    line-height: 10vh;
+}
+
+header #top h1{
+    font-size: 0;
+}
+
+header #top img{
+    width: 80%;
+    height: 80%;
+    margin: 1vh;    
+}
+
+header #top #menu{
+	width: 50%;
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: 600;
+	justify-content: space-evenly;
+}
+
+/*section*/
+section{
+    margin-bottom: 20vh;
+}
+
+/*서브 메인*/
+#main{
+    width: 100%;
+    background-image: url(../photo/sub02-kid\ together.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30vh 0;
+}
+
+#main .mention{
+    color: #000;
+    text-align: center;
+}
+
+#main .mention h3{
+	font-size: 5rem;
+	font-weight: 800;
+	margin-bottom: 3vh;
+	font-family: 'Cera Pro Bold';
+}
+
+#main .mention p{
+	font-size: 1.25rem;
+	font-weight: 600;
+	font-family: 'Noto Sans KR';
+	line-height: 2.5rem;
+}
+
+/* // 메인*/
+
+/*교육*/
+
+#edu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+}
+
+#edu .intro{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 50vh;
+}
+
+#edu .intro h3{
+	font-size: 1.8rem;
+	font-weight: 700;
+}
+
+#edu .intro p{
+	line-height: 2rem;
+}
+
+#edu .intro #link{
+	color: #ffd500;
+}
+
+/* // 교육 // */
+
+
+/*단계적 학습 준비물*/
+#step{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+
+#step #edu-step{
+	width: 85%;
+	overflow: hidden;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#step #edu-step >h3{
+	font-size: 1.8rem;
+	font-weight: 700;
+	margin-bottom: 3vh;
+}
+
+#step #edu-step .choice-step{
+	display: flex;
+	justify-content: space-around;
+}
+
+
+#step #edu-step .choice-step .box-step{
+	width: 50%;
+	height: 50vh;
+	border: 1px solid #000;
+	border-radius: 20px; 
+	box-sizing: border-box;
+	margin: 0 5px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+#step #edu-step .choice-step .box-step figure{
+	margin: auto;
+	height: 45vh;
+	display: flex;
+	align-items: center;
+}
+
+#step #edu-step .choice-step .box-step .name{
+	height: 15vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	line-height: 2rem;
+}
+
+#step #edu-step .choice-step .box-step .name h3{
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+
+
+/*배너 뉴스*/
+
+#banner{
+	background-color: #2275D3;
+}
+
+#banner .mySwiper{
+	width: 90%;
+	margin: auto;
+}
+
+#banner .mySwiper .swiper-wrapper{
+	display: flex;
+	height: 40vh;
+
+}
+
+#banner .mySwiper .swiper-wrapper .swiper-slide{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#banner .mySwiper .swiper-wrapper .swiper-slide figure{
+	width: 50%;
+}
+
+
+#banner .mySwiper .swiper-wrapper .swiper-slide .borad{
+	font-family: 'Noto Sans KR';
+	color: #fff;
+}
+
+#banner .mySwiper .swiper-wrapper .swiper-slide .borad > h3{
+	font-size: 1.8rem;
+	margin-bottom: 3%;
+	font-weight: 700;
+	line-height: 2rem;
+}
+
+#banner .mySwiper .swiper-wrapper .swiper-slide .borad > p{
+	font-size: 1.1rem;
+	margin-bottom: 3%;
+	line-height: 1.8rem;
+}
+
+#banner .mySwiper .swiper-wrapper .swiper-slide .borad #link{
+	color: #fff;
+}
+
+/*   // 배너인듯한 뉴스 /// */
+
+/*연락처 수업계획 소개*/
+#manage {
+	display: flex;
+	justify-content: center;
+}
+
+
+#manage .mana{
+	width: 85%;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#manage .mana .one{
+	width: 23%;
+	height: 45vh;
+	border: 2px solid #ffd500;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 1%;
+	box-sizing: border-box;
+	font-family: 'Noto Sans KR';
+}
+
+#manage .mana .one .symbol{
+	font-size: 2rem;
+	line-height: 3rem;
+}
+
+#manage .mana .one .account{
+	font-size: 1.1rem;
+	line-height: 1.4rem;
+}
+
+/*//연락처 수업계획 //*/
+
+/*추가 문의하기*/
+#tell{
+	width: 100%;
+	background-color: #ffd500;
+	height: 15vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#tell .box-tell{
+	width: 80%;
+	display: flex;
+	justify-content: space-around;
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+
+#tell .box-tell .symbol-tell{
+	width: 20%;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+/*푸터*/
+footer {
+	background-image: url(../photo/25.legobrick\ 1-12.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: 3%;
+}
+
+footer #footermenu {
+	width: 85%;
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+}
+
+footer #footermenu .one {
+	font-size: 1.2rem;
+	font-family: 'Cera Pro Regular';
+}
+
+footer #footermenu .one li {
+	margin-bottom: 2vh;
+}
+
+footer #footermenu .one li:nth-child(1) {
+	font-family: 'Cera Pro Bold';
+	font-size: 1.3rem;
+	font-weight: 600;
+	margin-bottom: 3vh;
+}
+
+footer .sns {
+	width: 85%;
+	margin: auto;
+	margin-bottom: 100px;
+}
+
+footer .sns .fu {
+	margin-bottom: 2vh;
+}
+
+footer .sns .fu>h4 {
+	font-family: 'Cera Pro Bold';
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+
+
+footer .sns .icon>li>a {
+	width: 2.5rem;
+	height: 2.5rem;
+	display: inline;
+	float: left;
+	margin-right: 2vw;
+}
+
+footer .footer-inner {
+	width: 85%;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+
+
+
+/* 반응형 */
+
+/*1024 이상 1200이하*/
+@media screen and (min-width: 1024px) and (max-width: 1200px){
+	section{
+		margin-bottom: 15vh;
+	}
+    /*교육*/
+	#edu{
+		width: 100%;
+		padding: 2%;
+	}
+
+	#edu figure{
+		display: none;
+	}
+
+
+	#edu .intro br{
+		display: none;
+	}
+
+    /*단계적 학습 */
+	#step #edu-step{
+		width: 95%;
+	}
+
+	#step #edu-step .choice-step .box-step {
+		height: 45vh;
+	}
+
+	#step #edu-step .choice-step .box-step figure{
+		height: 30vh;
+	}
+
+	#step #edu-step .choice-step .box-step .name{
+		height: 15vh;
+		line-height: 1.5rem;
+	}
+		
+	#step #edu-step .choice-step .box-step .name h3{
+		font-size: 1rem;
+	}
+
+	#banner .mySwiper {
+		width: 95%;
+	}
+
+	#banner .mySwiper .swiper-wrapper .swiper-slide figure{
+		width: 45%;
+	}
+
+	#banner .mySwiper .swiper-wrapper .swiper-slide .borad{
+		width: 45%;
+	}
+
+	#banner .mySwiper .swiper-wrapper .swiper-slide .borad > h3{
+		font-size: 1.4rem;
+		font-weight: 600;
+	}
+
+	#banner .mySwiper .swiper-wrapper .swiper-slide .borad > p{
+		font-size: 1rem;
+	}
+
+	#banner .mySwiper .swiper-wrapper .swiper-slide .borad > p br{
+		display: none;
+	
+	}	
+
+	/* //배너// */
+
+	/*연락처 수업계획*/
+	#manage .mana{
+		width: 99%;
+	}
+
+	#manage .mana .one .symbol {
+		font-size: 1.4rem;
+		line-height: 2rem;
+	}
+
+	#manage .mana .one .account{
+		font-size: 1rem;
+		line-height: 1.2rem;
+	}
+
+	#manage .mana .one #link{
+		font-size: 1rem;
+	}
+
+	/* //수업계획//*/
+
+	/*추가문의하기*/
+
+	#tell .box-tell{
+		width: 90%;
+		font-size: 1.3rem;
+	}
+
+
+
+
+
+
+}
+
+
+/*767 이상 1024이하*/
+@media screen and (min-width: 767px) and (max-width: 1024px){
+	section{
+		margin-bottom: 10vh;
+	}
+
+	/*서브 메인*/
+	#main{
+		padding: 25vh 0;
+	}
+
+	#main .mention h3{
+		font-size: 3rem;
+		font-weight: 600;
+		margin-bottom: 2vh;
+	}
+
+	#main .mention p{
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 1.8rem;
+	}
+
+	/*교육*/
+	#edu{
+		width: 95%;
+		padding: 2%;
+	}
+
+	#edu figure{
+		display: none;
+	}
+
+	#edu .intro br{
+		display: none;
+	}
+
+	/*단계적 학습*/
+	#step #edu-step{
+		width: 95%;
+	}
+
+	#step #edu-step .choice-step .box-step{
+		height: 35vh;
+	}
+
+	#step #edu-step .choice-step .box-step figure{
+		height: 25vh;
+	}
+
+	#step #edu-step .choice-step .box-step .name{
+		height: 10vh;
+		line-height: 1rem;
+	}
+
+	#step #edu-step .choice-step .box-step .name h3{
+		font-size: 1rem;
+	}
+
+	#step #edu-step .choice-step .box-step .name p{
+		display: none;
+	}
+	
+	/*배너*/
+	#banner .mySwiper {
+		width: 95%;
+	}
+
+	#banner .mySwiper .swiper-wrapper{
+		height: 35vh;
+	}
+
+	#banner .mySwiper .swiper-wrapper .swiper-slide figure{
+		width: 45%;
+	}
+
+	#banner .mySwiper .swiper-wrapper .swiper-slide .borad{
+		width: 45%;
+	}
+
+	#banner .mySwiper .swiper-wrapper .swiper-slide .borad > h3{
+		font-size: 1.4rem;
+		font-weight: 600;
+	}
+
+	#banner .mySwiper .swiper-wrapper .swiper-slide .borad > p{
+		font-size: 1rem;
+	}
+
+	#banner .mySwiper .swiper-wrapper .swiper-slide .borad > p br{
+		display: none;	
+	}
+	
+	/*연락처 수업계획*/
+	#manage .mana{
+		width: 99%;
+	}
+
+	#manage .mana .one{
+		height: 35vh;
+	}
+
+	#manage .mana .one .symbol {
+		font-size: 1.2rem;
+		line-height: 1.5rem;
+	}
+
+	#manage .mana .one .account{
+		display: none;
+	}
+
+	#manage .mana .one #link{
+		font-size: 1rem;
+	}
+
+	/*추가 문의하기*/
+
+	#tell .box-tell{
+		width: 90%;
+		font-size: 1rem;
+	}
+
+	/*푸터*/
+	footer{
+		background-image: none;
+		padding: 3vh;
+	}
+
+	footer #footermenu .one{
+		font-size: 1rem;
+	}
+
+
+}
+
+
+
+/*540 이상 766 이하*/
+@media screen and (min-width: 540px) and (max-width: 767px){
+	section {
+		margin-bottom: 8vh;
+	}
+
+	#link{
+		font-size: 0.9rem;
+	}
+
+	header #top #menu{
+		font-size: 1rem;
+	}	
+
+	/*서브 메인*/
+	#main{
+		padding: 20vh 0;
+	}
+
+	#main .mention h3{
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin-bottom: 1vh;
+	}
+
+	#main .mention p{
+		font-size: 0.9rem;
+		font-weight: 400;
+		line-height: 1.8rem;
+	}
+
+	/*교육*/
+	#edu{
+		width: 95%;
+		padding: 2%;
+	}
+
+	#edu figure{
+		display: none;
+	}
+
+	#edu .intro h3 {
+		font-size: 1rem;
+	}
+
+	#edu .intro p {
+		font-size: 0.9rem;
+		line-height: 1.2rem;
+	}
+
+	#edu .intro br{
+		display: none;
+	}
+
+	/*단계적 학습*/
+	#step #edu-step{
+		width: 97%;
+	}
+
+	#step #edu-step >h3{
+		font-size: 1.3rem;
+		font-weight: 500;
+	}
+
+	#step #edu-step .choice-step .box-step{
+		height: 30vh;
+	}
+
+	#step #edu-step .choice-step .box-step figure{
+		height: 30vh;
+	}
+
+	#step #edu-step .choice-step .box-step .name{
+		display: none;
+	}
+
+	
+	
+	/*배너*/
+	#banner .mySwiper {
+		width: 98%;
+	}
+
+	#banner .mySwiper .swiper-wrapper{
+		height: 28vh;
+	}
+
+	#banner .mySwiper .swiper-wrapper .swiper-slide figure{
+		width: 47%;
+	}
+
+	#banner .mySwiper .swiper-wrapper .swiper-slide .borad{
+		width: 47%;
+	}
+
+	#banner .mySwiper .swiper-wrapper .swiper-slide .borad br{
+		display: none;
+	}
+
+	#banner .mySwiper .swiper-wrapper .swiper-slide .borad > h3{
+		font-size: 1rem;
+		font-weight: 500;
+		line-height: 1.1rem;
+	}
+
+	#banner .mySwiper .swiper-wrapper .swiper-slide .borad > p{
+		font-size: 0.8rem;
+		line-height: 1rem;
+	}
+
+	
+	/*연락처 수업계획*/
+	#manage .mana{
+		width: 99%;
+	}
+
+	#manage .mana .one{
+		height: 30vh;
+	}
+
+	#manage .mana .one .symbol {
+		font-size: 1rem;
+		line-height: 1.2rem;
+	}
+
+	#manage .mana .one .account{
+		display: none;
+	}
+
+	#manage .mana .one #link{
+		font-size: 1rem;
+	}
+
+	/*추가 문의하기*/
+
+	#tell .box-tell{
+		width: 90%;
+		font-size: 1rem;
+	}
+
+	#tell .box-tell .symbol-tell{
+		width: 30%;
+	}
+
+	/*푸터*/
+	footer{
+		background-image: none;
+	}
+	footer #footermenu{
+		width: 97%;}
+
+
+	footer #footermenu .one{
+		font-size: 0.8rem;
+	}
+
+	footer #footermenu .one li {
+		margin-bottom: 1vh;
+	}
+
+	footer #footermenu .one li:nth-child(1){
+		font-size: 1rem;
+		font-weight: 600;
+	}
+
+	footer .sns{
+		width: 97%;
+	}
+
+	footer .sns .fu h4{
+		font-size: 1rem;
+	}
+
+	footer .sns .icon img{
+		width: 90%;
+	}
+
+	footer .footer-inner{
+		width: 100%;
+	}
+
+	footer .footer-inner p{
+		font-size: 0.9rem;
+	}
+
+
+}
+
+/*539 이하*/
+@media screen and (max-width: 539px){
+	section {
+		margin-bottom: 8vh;
+	}
+
+	#link{
+		font-size: 0.9rem;
+	}
+
+	header #top #menu{
+		width: 80%;
+		font-size: 12px;
+		font-weight: 300;
+
+	}
+
+	/*서브 메인*/
+	#main{
+		padding: 20vh 0;
+	}
+
+	#main .mention h3{
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin-bottom: 1vh;
+	}
+
+	#main .mention p{
+		font-size: 0.9rem;
+		font-weight: 400;
+		line-height: 1.8rem;
+	}
+
+	/*교육*/
+	#edu{
+		width: 95%;
+		padding: 2%;
+	}
+
+	#edu figure{
+		display: none;
+	}
+
+	#edu .intro h3 {
+		font-size: 1rem;
+	}
+
+	#edu .intro p {
+		font-size: 0.9rem;
+		line-height: 1.2rem;
+	}
+
+	#edu .intro br{
+		display: none;
+	}
+
+	/*단계적 학습*/
+	#step #edu-step{
+		width: 97%;
+	}
+
+	#step #edu-step >h3{
+		font-size: 1.3rem;
+		font-weight: 500;
+	}
+
+	#step #edu-step .choice-step .box-step{
+		height: 30vh;
+	}
+
+	#step #edu-step .choice-step .box-step figure{
+		height: 30vh;
+	}
+
+	#step #edu-step .choice-step .box-step .name{
+		display: none;
+	}
+
+	
+	
+	/*배너*/
+	#banner .mySwiper {
+		width: 98%;
+	}
+
+	#banner .mySwiper .swiper-wrapper{
+		height: 28vh;
+	}
+
+	#banner .mySwiper .swiper-wrapper .swiper-slide figure{
+		width: 47%;
+	}
+
+	#banner .mySwiper .swiper-wrapper .swiper-slide .borad{
+		width: 47%;
+	}
+
+	#banner .mySwiper .swiper-wrapper .swiper-slide .borad br{
+		display: none;
+	}
+
+	#banner .mySwiper .swiper-wrapper .swiper-slide .borad > h3{
+		font-size: 1rem;
+		font-weight: 500;
+		line-height: 1.1rem;
+	}
+
+	#banner .mySwiper .swiper-wrapper .swiper-slide .borad > p{
+		font-size: 0.8rem;
+		line-height: 1rem;
+	}
+
+	
+	/*연락처 수업계획*/
+	#manage .mana{
+		width: 99%;
+	}
+
+	#manage .mana .one{
+		height: 30vh;
+	}
+
+	#manage .mana .one .symbol {
+		font-size: 1rem;
+		line-height: 1.2rem;
+	}
+
+	#manage .mana .one .account{
+		display: none;
+	}
+
+	#manage .mana .one #link{
+		font-size: 1rem;
+	}
+
+	/*추가 문의하기*/
+
+	#tell .box-tell{
+		width: 90%;
+		font-size: 1rem;
+	}
+
+	#tell .box-tell .symbol-tell{
+		width: 35%;
+	}
+
+	/*푸터*/
+	footer{
+		background-image: none;
+	}
+	footer #footermenu{
+		width: 97%;}
+
+
+	footer #footermenu .one{
+		font-size: 0.8rem;
+	}
+
+	footer #footermenu .one li {
+		margin-bottom: 1vh;
+	}
+
+	footer #footermenu .one li:nth-child(1){
+		font-size: 1rem;
+		font-weight: 600;
+	}
+
+	footer .sns{
+		width: 97%;
+	}
+
+	footer .sns .fu h4{
+		font-size: 1rem;
+	}
+
+	footer .sns .icon img{
+		width: 90%;
+	}
+
+	footer .footer-inner{
+		width: 100%;
+	}
+
+	footer .footer-inner p{
+		font-size: 0.9rem;
+	}	
+
+}
+
+/*400이하*/
+@media screen and (max-width: 400px) {
+	section {
+		margin-bottom: 8vh;
+	}
+
+	#link{
+		font-size: 0.9rem;
+	}
+
+
+	header #top{
+		justify-content: center;
+	}
+
+	header #top img{
+		max-width: 50px;
+
+	}
+
+	header #top #menu{
+		width: 70%;
+		font-size: 8px;
+	}
+
+	/*서브 메인*/
+	#main{
+		padding: 20vh 0;
+	}
+
+	#main .mention h3{
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin-bottom: 1vh;
+	}
+
+	#main .mention p{
+		font-size: 0.8rem;
+		font-weight: 400;
+		line-height: 1.2rem;
+	}
+
+	#main .mention p br{
+		display: none;
+	}
+	
+
+	/*교육*/
+	#edu{
+		width: 95%;
+		padding: 2%;
+	}
+
+	#edu figure{
+		display: none;
+	}
+
+	#edu .intro h3 {
+		font-size: 1rem;
+	}
+
+	#edu .intro p {
+		font-size: 0.8rem;
+		line-height: 1.2rem;
+	}
+
+	#edu .intro br{
+		display: none;
+	}
+
+	/*단계적 학습*/
+	#step #edu-step{
+		width: 97%;
+	}
+
+	#step #edu-step >h3{
+		font-size: 1rem;
+		font-weight: 500;
+	}
+
+	#step #edu-step .choice-step .box-step{
+		height: 20vh;
+	}
+
+	#step #edu-step .choice-step .box-step figure{
+		height: 20vh;
+	}
+
+	#step #edu-step .choice-step .box-step .name{
+		display: none;
+	}
+
+	
+	
+	/*배너*/
+	#banner .mySwiper {
+		width: 98%;
+	}
+
+	#banner .mySwiper .swiper-wrapper{
+		height: 28vh;
+	}
+
+	#banner .mySwiper .swiper-wrapper .swiper-slide figure{
+		width: 47%;
+	}
+
+	#banner .mySwiper .swiper-wrapper .swiper-slide .borad{
+		width: 47%;
+	}
+
+	#banner .mySwiper .swiper-wrapper .swiper-slide .borad br{
+		display: none;
+	}
+
+	#banner .mySwiper .swiper-wrapper .swiper-slide .borad > h3{
+		font-size: 1rem;
+		font-weight: 500;
+		line-height: 1.1rem;
+	}
+
+	#banner .mySwiper .swiper-wrapper .swiper-slide .borad > p{
+		display: none;
+	}
+
+	
+	/*연락처 수업계획*/
+	#manage .mana{
+		width: 100%;
+	}
+
+	#manage .mana .one{
+		height: 25vh;
+	}
+
+	#manage .mana .one .symbol {
+		font-size: 0.8rem;
+		line-height: 1rem;
+	}
+
+	#manage .mana .one .account{
+		display: none;
+	}
+
+	#manage .mana .one #link{
+		font-size: 0.7rem;
+	}
+
+	/*추가 문의하기*/
+
+	#tell .box-tell{
+		width: 90%;
+		font-size: 1rem;
+		font-weight: 500;
+	}
+
+	#tell .box-tell .symbol-tell{
+		width: 40%;
+	}
+
+	/*푸터*/
+	footer{
+		background-image: none;
+		padding: 2%;
+	}
+
+	footer #footermenu{
+		width: 100%;
+		margin-bottom: 10px;
+		justify-content: space-between;
+	}
+
+
+	footer #footermenu .one{
+		font-size: 0.8rem;
+	}
+
+	footer #footermenu .one li {
+		margin-bottom: 1vh;
+	}
+
+	footer #footermenu .one li:nth-child(1){
+		font-size: 14px;
+		font-weight: 600;
+	}
+
+	footer .sns{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	footer .sns .fu h4{
+		font-size: 14px;
+	}
+
+	footer .sns .icon img{
+		width: 80%;
+	}
+
+	footer .footer-inner{
+		width: 100%;
+	}
+
+	footer .footer-inner p{
+		font-size: 12px;
+	}
+
+	
+}
+
+
