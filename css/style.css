@@ -1410,9 +1410,7 @@ footer .footer-inner {
 
 	/*메뉴*/
 
-	header {
-		height: 8vh;
-	}
+
 
 	header #top #menu{
 		width: 80%;
@@ -1683,9 +1681,7 @@ footer .footer-inner {
 		margin-bottom: 5vh;
 	}
 
-	header {
-		height: 8vh;
-	}
+	
 
 	header #top{
 		justify-content: center;
