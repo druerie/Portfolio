@@ -877,7 +877,7 @@ footer .footer-inner {
 
 	/*서브 메인*/
 	#main{
-		padding: 20vh 0;
+		padding: 15vh 0;
 	}
 
 	#main .mention h3{
@@ -1064,7 +1064,7 @@ footer .footer-inner {
 	}
 
 	header #top img{
-		max-width: 50px;
+		max-width: 40px;
 
 	}
 

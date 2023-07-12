@@ -1410,10 +1410,15 @@ footer .footer-inner {
 
 	/*메뉴*/
 
+	header {
+		height: 8vh;
+	}
+
 	header #top #menu{
 		width: 80%;
 		font-size: 12px;
 		font-weight: 300;
+
 
 	}
 
@@ -1676,6 +1681,10 @@ footer .footer-inner {
 
 	section{
 		margin-bottom: 5vh;
+	}
+
+	header {
+		height: 8vh;
 	}
 
 	header #top{
