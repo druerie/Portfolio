@@ -1,0 +1,661 @@
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126License: none (public domain)*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,
+big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,
+hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,ul {
+	list-style: none;
+}
+
+blockquote,q {
+	quotes: none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* //css reset// */
+
+
+/*css*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/*font-family: 'Noto Sans KR', sans-serif;*/
+
+@font-face {
+	font-family: 'Cera Pro Regular', sans-serif;
+	src: url(../fonts/Cera\ Pro\ Regular.otf);
+}
+
+@font-face {
+	font-family: 'Cera Pro Bold', sans-serif;
+	src: url(../fonts/Cera\ Pro\ Bold.otf);
+}
+
+*{
+    transition: all 0.8s;
+	font-family: 'Noto Sans KR'
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit
+}
+
+/*헤더*/
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: #fff;
+}
+
+header #top{
+    width: 100%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    line-height: 10vh;
+}
+
+header #top h1{
+    font-size: 0;
+}
+
+header #top img{
+    width: 80%;
+    height: 80%;
+    margin: 1vh;    
+}
+
+header #top #menu{
+	width: 50%;
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: 600;
+	justify-content: space-evenly;
+    font-family: 'Cera Pro Regular';
+}
+
+/*section*/
+section{
+    margin-bottom: 20vh;
+}
+
+/*역사*/
+.toy{
+    height: 72vh;
+    width: 100%;
+    display: flex;    
+    justify-content: space-between;  
+    align-items: center;
+    overflow: hidden;
+}
+   
+
+.toy figure{
+    width: 50%;
+}
+
+.toy .notice{
+    height: 20vh;
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.toy .notice h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Cera Pro Regular';
+}
+
+.toy .notice h6{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-family: 'Noto Sans KR';
+}
+
+/* //역사 */
+
+/*설명*/
+.explain{
+    width: 100%;   
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.explain .text{
+    width: 50%;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    font-family: 'Cera Pro Regular';
+    margin-top: 3%;
+}
+/* //설명//*/
+
+#time{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+
+#time .timeline{
+    width: 100%;
+    background-color: #00b94d;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cera Pro Bold';
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20vh;
+}
+
+#time figure{
+    max-width: 50%;
+}
+
+#time figure:hover{
+    transform: scale(1.2);
+}
+
+/*푸터*/
+footer {
+	background-image: url(../photo/25.legobrick\ 1-12.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: 3%;
+}
+
+footer #footermenu {
+	width: 85%;
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+}
+
+footer #footermenu .one {
+	font-size: 1.2rem;
+	font-family: 'Cera Pro Regular';
+}
+
+footer #footermenu .one li {
+	margin-bottom: 2vh;
+}
+
+footer #footermenu .one li:nth-child(1) {
+	font-family: 'Cera Pro Bold';
+	font-size: 1.3rem;
+	font-weight: 600;
+	margin-bottom: 3vh;
+}
+
+footer .sns {
+	width: 85%;
+	margin: auto;
+	margin-bottom: 100px;
+}
+
+footer .sns .fu {
+	margin-bottom: 2vh;
+}
+
+footer .sns .fu>h4 {
+	font-family: 'Cera Pro Bold';
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+
+
+footer .sns .icon>li>a {
+	width: 2.5rem;
+	height: 2.5rem;
+	display: inline;
+	float: left;
+	margin-right: 2vw;
+}
+
+footer .footer-inner {
+	width: 85%;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+
+
+/*반응형*/
+
+/*1024 이상 1200 이하*/
+@media screen and (min-width: 1024px) and (max-width: 1200px){
+    section{
+        margin-bottom: 15vh;
+    }
+    
+    .toy .notice br{
+        display: none;
+    }
+
+    .explain .text{
+        width: 65%;
+    }
+
+}
+
+
+/*767 이상 1024이하*/
+@media screen and (min-width: 767px) and (max-width: 1024px){
+    section{
+        margin-bottom: 13vh;
+    }
+    
+    header #top #menu{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    /*역사*/
+
+    .toy{
+        height: 50vh;
+    }
+
+
+    .toy .notice h3{
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    .toy .notice h6{
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+
+    .toy .notice br{
+        display: none;
+    }
+
+    /*설명*/
+    .explain{
+        padding: 2%;
+        height: 90vh;       
+    }
+
+    .explain figure{
+        max-width: 90%;
+    }
+
+    .explain .text{
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+	/*푸터*/
+	footer{
+		background-image: none;
+		padding: 3vh;
+	}
+
+	footer #footermenu .one{
+		font-size: 1rem;
+	}    
+
+}
+
+
+/*540이상 766이하*/
+@media screen and (min-width: 540px) and (max-width: 767px){
+    section{
+        margin-bottom: 7vh;
+    }
+
+    header #top #menu{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    /*역시*/
+
+    .toy{
+        height: 35vh;
+    }
+
+    .toy .notice h3{
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .toy .notice h6{
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+
+
+    .toy .notice br{
+        display: none;
+    }
+
+    /*설명*/
+    .explain{
+        padding: 2%;
+        height: 60vh;
+    }
+
+    .explain figure{
+        max-width: 50%;
+    }
+
+
+    .explain .text{
+        width: 80%;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+
+    /*timeline*/
+    #time .timeline{
+        height: 13vh;
+        font-size: 1.5rem;
+        margin-bottom: 7vh;
+    }
+
+    /*푸터*/
+	footer{
+		background-image: none;
+	}
+	footer #footermenu{
+		width: 97%;}
+
+
+	footer #footermenu .one{
+		font-size: 0.8rem;
+	}
+
+	footer #footermenu .one li {
+		margin-bottom: 1vh;
+	}
+
+	footer #footermenu .one li:nth-child(1){
+		font-size: 1rem;
+		font-weight: 600;
+	}
+
+	footer .sns{
+		width: 97%;
+	}
+
+	footer .sns .fu h4{
+		font-size: 1rem;
+	}
+
+	footer .sns .icon img{
+		width: 90%;
+	}
+
+	footer .footer-inner{
+		width: 100%;
+	}
+
+	footer .footer-inner p{
+		font-size: 0.9rem;
+	}
+
+
+
+}
+
+
+/*539이하*/
+@media screen and (max-width: 540px){
+    section{
+        margin-bottom: 5vh;
+    }
+
+	header #top #menu{
+		width: 80%;
+		font-size: 12px;
+		font-weight: 300;
+	}
+
+    /*역시*/
+
+    .toy{
+        height: 35vh;
+    }
+
+    .toy .notice h3{
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .toy .notice h6{
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+
+
+    .toy .notice br{
+        display: none;
+    }
+
+    /*설명*/
+    .explain{
+        padding: 2%;
+        height: 60vh;
+    }
+
+    .explain figure{
+        max-width: 50%;
+    }
+
+
+    .explain .text{
+        width: 80%;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+
+    /*timeline*/
+    #time .timeline{
+        height: 13vh;
+        font-size: 1.5rem;
+        margin-bottom: 7vh;
+    }
+
+	/*푸터*/
+	footer{
+		background-image: none;
+	}
+	footer #footermenu{
+		width: 97%;}
+
+
+	footer #footermenu .one{
+		font-size: 0.8rem;
+	}
+
+	footer #footermenu .one li {
+		margin-bottom: 1vh;
+	}
+
+	footer #footermenu .one li:nth-child(1){
+		font-size: 1rem;
+		font-weight: 600;
+	}
+
+	footer .sns{
+		width: 97%;
+	}
+
+	footer .sns .fu h4{
+		font-size: 1rem;
+	}
+
+	footer .sns .icon img{
+		width: 90%;
+	}
+
+	footer .footer-inner{
+		width: 100%;
+	}
+
+	footer .footer-inner p{
+		font-size: 0.9rem;
+	}  
+
+
+
+}
+
+/*400이하*/
+@media screen and (max-width: 400px){
+
+    section{
+        margin-bottom: 5vh;
+    }
+
+	header #top{
+		justify-content: center;
+	}
+
+	header #top img{
+		max-width: 50px;
+
+	}
+
+	header #top #menu{
+		width: 70%;
+		font-size: 8px;
+	}
+
+    /*역시*/
+
+    .toy{
+        height: 30vh;
+    }
+
+    .toy .notice h3{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .toy .notice h6{
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+
+
+    .toy .notice br{
+        display: none;
+    }
+
+    /*설명*/
+    .explain{
+        padding: 2%;
+        height: 60vh;
+    }
+
+    .explain figure{
+        max-width: 50%;
+    }
+
+
+    .explain .text{
+        width: 85%;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+
+    /*timeline*/
+    #time .timeline{
+        height: 10vh;
+        font-size: 1.3rem;
+        margin-bottom: 7vh;
+    }
+
+	/*푸터*/
+	footer{
+		background-image: none;
+		padding: 2%;
+	}
+
+	footer #footermenu{
+		width: 100%;
+		margin-bottom: 10px;
+		justify-content: space-between;
+	}
+
+
+	footer #footermenu .one{
+		font-size: 0.8rem;
+	}
+
+	footer #footermenu .one li {
+		margin-bottom: 1vh;
+	}
+
+	footer #footermenu .one li:nth-child(1){
+		font-size: 14px;
+		font-weight: 600;
+	}
+
+	footer .sns{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	footer .sns .fu h4{
+		font-size: 14px;
+	}
+
+	footer .sns .icon img{
+		width: 80%;
+	}
+
+	footer .footer-inner{
+		width: 100%;
+	}
+
+	footer .footer-inner p{
+		font-size: 12px;
+	}     
+    
+}

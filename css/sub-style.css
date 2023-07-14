@@ -168,7 +168,7 @@ section{
 	font-weight: 700;
 }
 
-#edu .intro p{
+#edu .intro h5{
 	line-height: 2rem;
 }
 
@@ -592,7 +592,7 @@ footer .footer-inner {
 		font-size: 1rem;
 	}
 
-	#step #edu-step .choice-step .box-step .name p{
+	#step #edu-step .choice-step .box-step .name h6{
 		display: none;
 	}
 	
@@ -715,7 +715,7 @@ footer .footer-inner {
 		font-size: 1rem;
 	}
 
-	#edu .intro p {
+	#edu .intro h5 {
 		font-size: 0.9rem;
 		line-height: 1.2rem;
 	}
@@ -859,7 +859,7 @@ footer .footer-inner {
 }
 
 /*539 이하*/
-@media screen and (max-width: 539px){
+@media screen and (max-width: 540px){
 	section {
 		margin-bottom: 8vh;
 	}
@@ -872,7 +872,6 @@ footer .footer-inner {
 		width: 80%;
 		font-size: 12px;
 		font-weight: 300;
-
 	}
 
 	/*서브 메인*/
@@ -906,7 +905,7 @@ footer .footer-inner {
 		font-size: 1rem;
 	}
 
-	#edu .intro p {
+	#edu .intro h5 {
 		font-size: 0.9rem;
 		line-height: 1.2rem;
 	}
@@ -1109,7 +1108,7 @@ footer .footer-inner {
 		font-size: 1rem;
 	}
 
-	#edu .intro p {
+	#edu .intro h5 {
 		font-size: 0.8rem;
 		line-height: 1.2rem;
 	}
