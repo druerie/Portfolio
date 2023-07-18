@@ -322,12 +322,12 @@ section{
 }
 
 #manage .mana .one .symbol{
-	font-size: 2rem;
+	font-size: 1.9rem;
 	line-height: 3rem;
 }
 
 #manage .mana .one .account{
-	font-size: 1.1rem;
+	font-size: 1rem;
 	line-height: 1.4rem;
 }
 
@@ -347,7 +347,7 @@ section{
 	width: 80%;
 	display: flex;
 	justify-content: space-around;
-	font-size: 2rem;
+	font-size: 1.9rem;
 	font-weight: 600;
 }
 
