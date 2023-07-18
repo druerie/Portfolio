@@ -110,6 +110,7 @@ header #top #menu{
     font-size: 1.1rem;
     font-weight: 600;
 	justify-content: space-evenly;
+	font-family: 'Cera Pro Regular';
 }
 
 
@@ -119,6 +120,7 @@ header #top #menu{
 section{
     margin-bottom: 20vh;
 }
+
 
 /*슬로건*/
 
